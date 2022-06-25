@@ -1,7 +1,11 @@
 package go_sum_ages
 
-import "fmt"
+func SumAges(ages []int) int {
+	result := 0
 
-func SumAges(ages int) {
-	fmt.Println(ages)
+	for _, v := range ages {
+		result += v
+	}
+
+	return result
 }
